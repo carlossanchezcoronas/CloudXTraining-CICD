@@ -46,7 +46,7 @@ const processRecords = async (records) => {
         }
         await sns.send(new PublishCommand({
             TopicArn: TOPIC_ARN_NAME,
-            Subject: "Processed SQS Queue Messages",
+            Subject: "Processed SQS Queue Messages V2",
             Message: record.body
         }));
 
